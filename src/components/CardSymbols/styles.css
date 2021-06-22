@@ -1,0 +1,79 @@
+.symbols {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap row;
+  margin: 12.5%;
+  width: 75%;
+  height: 75%;
+  position: relative;
+}
+
+.symbols div {
+  text-align: center;
+  display: inline-block;
+  width: 32px;
+  transform: scale(1.6);
+}
+
+.card-A .symbols div {
+  transform: scale(5);
+}
+
+.card-2 .symbols,
+.card-3 .symbols {
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.card-2 .symbols :last-child,
+.card-3 .symbols :last-child,
+.card-4 .symbols :nth-child(3),
+.card-4 .symbols :nth-child(4),
+.card-5 .symbols :nth-child(3),
+.card-5 .symbols :nth-child(4),
+.card-6 .symbols :nth-child(5),
+.card-6 .symbols :nth-child(6),
+.card-7 .symbols :nth-child(5),
+.card-7 .symbols :nth-child(6),
+.card-8 .symbols :nth-child(5),
+.card-8 .symbols :nth-child(6),
+.card-8 .symbols :nth-child(8),
+.card-9 .symbols :nth-child(5),
+.card-9 .symbols :nth-child(6),
+.card-9 .symbols :nth-child(7),
+.card-9 .symbols :nth-child(8),
+.card-10 .symbols :nth-child(5),
+.card-10 .symbols :nth-child(6),
+.card-10 .symbols :nth-child(7),
+.card-10 .symbols :nth-child(8),
+.card-10 .symbols :last-child {
+  transform: rotate(180deg) scale(1.6);
+}
+
+.card-5 .symbols :last-child,
+.card-7 .symbols :last-child,
+.card-8 .symbols :last-child,
+.card-8 .symbols :nth-child(7),
+.card-9 .symbols :last-child,
+.card-10 .symbols :nth-child(9),
+.card-10 .symbols :last-child {
+  position: absolute;
+}
+
+.card-7 .symbols :last-child,
+.card-8 .symbols :nth-child(7) {
+  top: 25%;
+}
+
+.card-8 .symbols :nth-child(8) {
+  bottom: 25%;
+}
+
+.card-10 .symbols :nth-child(9) {
+  top: 18%;
+}
+
+.card-10 .symbols :last-child {
+  bottom: 18%;
+}

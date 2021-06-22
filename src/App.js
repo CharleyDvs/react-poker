@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
 
+import Hand from './components/Hand';
+
 function App() {
+  const BASE_URL = 'http://localhost:4040';
+  const tableUrl = BASE_URL + '/get-table-hand';
+  const playerUrl = BASE_URL + '/get-hand/2';
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="play-area">
+        <h1>Poker Game</h1>
+        <Hand title="Table hand" url={tableUrl} isTable />
+        <Hand title="Player hand" url={playerUrl} />
+      </div>
     </div>
   );
 }
