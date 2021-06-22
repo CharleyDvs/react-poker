@@ -1,11 +1,12 @@
 const express = require('express');
-const path = require('path');
+const cors = require('cors');
 const { Deck, Hand } = require('../app/cards/deck');
 
 const app = express();
 
 const PORT = 4040;
 
+app.use(cors());
 app.use(express.json());
 
 const deck = new Deck();
@@ -14,7 +15,9 @@ app.use(express.static('public'));
 
 app.get('/get-table-hand', (req, res) => {
   res.json({
-    tableHand: deck.tableHand,
+    hand: {
+      cards: deck.tableHand,
+    },
   });
 });
 
@@ -22,8 +25,7 @@ app.get('/get-hand/:size', (req, res) => {
   const { size } = req.params;
   const playerHand = new Hand(deck, parseInt(size));
   res.json({
-    playerHand,
-    tableHand: deck.tableHand,
+    hand: playerHand,
   });
 });
 
