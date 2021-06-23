@@ -9,6 +9,36 @@
   margin: 16px, 5%;
 }
 
+.title-container {
+  padding: 16px 64px;
+  color: #7e002f;
+  position: relative;
+  font-family: 'Meddon', cursive;
+  /* background-color: #222; */
+  background: rgb(34, 34, 34);
+  background: linear-gradient(
+    90deg,
+    rgba(34, 34, 34, 1) 0%,
+    rgba(17, 17, 17, 1) 12%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.title-container svg {
+  position: absolute;
+  left: 4rem;
+  top: -12px;
+  opacity: 0.7;
+  transform: scale(7);
+  color: #dfdfdf;
+  z-index: 1;
+}
+
+.title-container h1 {
+  position: relative;
+  z-index: 2;
+}
+
 .player-area ul {
   position: relative;
   margin: 0 auto;

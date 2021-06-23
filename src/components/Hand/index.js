@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { GiVisoredHelm, GiCrownedSkull } from 'react-icons/gi';
 import './styles.css';
 
 import Card from '../Card';
@@ -20,9 +21,14 @@ function Hand({ url, title, isTable }) {
     fetchCards(url);
   }, [url]);
 
+  const playerIcon = isTable ? <GiCrownedSkull /> : <GiVisoredHelm />;
+
   return (
     <div className="hand-container">
-      <h1>{title}</h1>
+      <div className="title-container">
+        {playerIcon}
+        <h1>{title}</h1>
+      </div>
       <div className="player-area">
         <ul>
           {currentCards.map((cardValue, index) => (

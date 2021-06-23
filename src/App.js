@@ -1,6 +1,7 @@
 import './App.css';
 
 import Hand from './components/Hand';
+import sword from './assets/img/sword.png';
 
 function App() {
   const BASE_URL = 'http://localhost:4040';
@@ -10,9 +11,12 @@ function App() {
   return (
     <div className="App">
       <div className="play-area">
-        <h1>Poker Game</h1>
-        <Hand title="Table hand" url={tableUrl} isTable />
-        <Hand title="Player hand" url={playerUrl} />
+        <h1 className="app-title">Ye Olde Poker Game</h1>
+        <Hand title="Thy mighty Table" url={tableUrl} isTable />
+        <Hand title="Thy brave Player" url={playerUrl} />
+      </div>
+      <div className="sword-container">
+        <img src={sword} alt="sword" />
       </div>
     </div>
   );

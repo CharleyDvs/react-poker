@@ -1,4 +1,26 @@
 .App {
   width: 100vw;
   min-height: 100vh;
+  position: relative;
+}
+
+.app-title {
+  padding: 16px;
+  margin-bottom: 64px;
+  color: #7e002f;
+  text-align: center;
+  font-family: 'Meddon', cursive;
+  background-color: #e4d2c7;
+  transform: skewY(10deg);
+  box-shadow: 15px 15px 20px #222;
+  position: relative;
+  z-index: 100;
+}
+
+.sword-container {
+  position: absolute;
+  right: -280px;
+  top: 300px;
+  transform: scale(1.2) rotate(55deg);
+  z-index: 101;
 }
