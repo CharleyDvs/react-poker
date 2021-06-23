@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { GiVisoredHelm, GiCrownedSkull } from 'react-icons/gi';
-import './styles.css';
 
 import Card from '../Card';
 

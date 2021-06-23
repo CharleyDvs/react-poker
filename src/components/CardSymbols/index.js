@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import './styles.css';
 
 function CardSymbols({ symbol, value }) {
   useEffect(() => {

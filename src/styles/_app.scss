@@ -7,10 +7,10 @@
 .app-title {
   padding: 16px;
   margin-bottom: 64px;
-  color: #7e002f;
+  color: $main-color;
   text-align: center;
-  font-family: 'Meddon', cursive;
-  background-color: #e4d2c7;
+  font-family: $main-font-faimly;
+  background-color: $secondary-color;
   transform: skewY(10deg);
   box-shadow: 15px 15px 20px #222;
   position: relative;

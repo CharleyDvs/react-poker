@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import './styles.css';
 
 import CardSymbols from '../CardSymbols';
 import React from 'react';

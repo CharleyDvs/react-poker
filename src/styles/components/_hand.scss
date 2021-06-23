@@ -11,10 +11,9 @@
 
 .title-container {
   padding: 16px 64px;
-  color: #7e002f;
+  color: $main-color;
   position: relative;
-  font-family: 'Meddon', cursive;
-  /* background-color: #222; */
+  font-family: $main-font-faimly;
   background: rgb(34, 34, 34);
   background: linear-gradient(
     90deg,
@@ -27,10 +26,10 @@
 .title-container svg {
   position: absolute;
   left: 4rem;
-  top: -12px;
+  top: -32px;
   opacity: 0.7;
   transform: scale(7);
-  color: #dfdfdf;
+  color: $white-color;
   z-index: 1;
 }
 

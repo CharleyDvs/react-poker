@@ -4,7 +4,7 @@
   background-color: transparent;
   perspective: 1000px;
   cursor: pointer;
-  color: #000;
+  color: $black-color;
   transition: all ease 0.7s;
 }
 
@@ -35,11 +35,11 @@
 }
 
 .card-front {
-  background-color: #dfdfdf;
+  background-color: $white-color;
 }
 
 .card-back {
-  background-image: url('../../assets/img/RfylXjR.png');
+  background-image: url('../../assets/img/card-bg.png');
   background-size: cover;
   background-position: center;
   transform: rotateY(180deg);
@@ -47,7 +47,7 @@
 
 .card.♦,
 .card.♥ {
-  color: red;
+  color: $red-color;
 }
 
 .card-corner {
