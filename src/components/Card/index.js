@@ -23,11 +23,11 @@ function Card({ cardValue, isTable, index }) {
     >
       <div className="card-container">
         <div className="card-front">
-          <div className={`card-corner corner-1`}>
+          <div className="card-corner">
             <p>{symbol}</p>
             <p>{value}</p>
           </div>
-          <div className={`card-corner corner-2`}>
+          <div className="card-corner">
             <p>{symbol}</p>
             <p>{value}</p>
           </div>

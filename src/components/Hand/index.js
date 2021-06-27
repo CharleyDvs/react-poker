@@ -23,7 +23,7 @@ function Hand({ url, title, isTable }) {
   const playerIcon = isTable ? <GiCrownedSkull /> : <GiVisoredHelm />;
 
   return (
-    <div className="hand-container">
+    <div>
       <div className="title-container">
         {playerIcon}
         <h1>{title}</h1>
